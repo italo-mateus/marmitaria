@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Marmitaria | Cardápio</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script type="module" src="/assets/menu.js"></script>
+  </head>
+  <body>
+    <header class="bar">
+      <div class="wrap top">
+        <a class="brand" href="/">Marmitaria<span>.</span></a>
+        <nav aria-label="Principal">
+          <a href="/admin">Administração</a>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="wrap hero-content">
+          <h1>
+            Comida de verdade,
+            <br />
+            com sabor de casa.
+          </h1>
+          <p>Escolha sua marmita favorita no nosso cardápio.</p>
+          <a class="button light" href="#cardapio">Ver cardápio</a>
+        </div>
+      </section>
+      <section id="cardapio" class="wrap menu">
+        <h2>Nosso cardápio</h2>
+        <div
+          id="filters"
+          class="filters"
+          role="group"
+          aria-label="Categorias"
+        ></div>
+        <p id="status" role="status"></p>
+        <div id="dishes" class="grid"></div>
+      </section>
+    </main>
+    <footer>
+      <div class="wrap footer-content">
+        <span>Marmitaria · Cardápio digital</span>
+      </div>
+    </footer>
+  </body>
+</html>
