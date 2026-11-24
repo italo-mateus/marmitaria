@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Administração | Marmitaria</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+    <script type="module" src="/assets/admin.js"></script>
+  </head>
+  <body class="admin">
+    <aside>
+      <a class="brand" href="/admin">Marmitaria<span>.</span></a>
+      <nav aria-label="Painel">
+        <button type="button" data-view="dashboard">Visão geral</button>
+        <button type="button" data-view="categorias">Categorias</button>
+        <button type="button" data-view="pratos">Pratos</button>
+        <a href="/">Ver cardápio ↗</a>
+      </nav>
+    </aside>
+    <main class="workspace">
+      <header class="section-head">
+        <h1 id="title">Visão geral</h1>
+        <button type="button" id="add" hidden></button>
+      </header>
+      <p id="status" role="status"></p>
+      <div id="content"></div>
+    </main>
+    <dialog id="editor" aria-labelledby="dialog-title">
+      <form id="form">
+        <h2 id="dialog-title"></h2>
+        <div id="fields"></div>
+        <p id="form-error" role="alert"></p>
+        <div class="actions">
+          <button class="secondary" id="cancel" type="button">Cancelar</button>
+          <button id="save">Salvar</button>
+        </div>
+      </form>
+    </dialog>
+  </body>
+</html>
