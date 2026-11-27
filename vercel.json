@@ -3,7 +3,7 @@
   "framework": "express",
   "functions": {
     "src/app.js": {
-      "includeFiles": "src/views/**"
+      "includeFiles": "{src/views,data}/**"
     }
   }
 }
